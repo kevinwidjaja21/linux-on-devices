@@ -35,7 +35,7 @@ Obviously, this is a phone designed to run mainstream linux and what I wanted to
 
 As you can see, all 3 phones are running Qualcomm Snapdragon 845. This SoC has a relatively good mainstream linux support through the [Qualcomm Snapdragon 845 Mainline project](https://gitlab.com/sdm845-mainline/linux). Mainlining in this case refers to getting an SoC to run linux kernel as close to its main source code maintained by Linus Torvalds with minimal software tweak (Not as extensive as Android Linux kernel). Other popular flagship SoC also has their own as can bee seen in [this Postmarket OS Wiki page](https://wiki.postmarketos.org/wiki/Mainlining). However, only few SoC has support as good as Snapdragon 845. One other notable SoC is Snapdragon 410 and some phones with SD410 has a [good community support for Postmarket OS](https://wiki.postmarketos.org/wiki/Qualcomm_Snapdragon_410/412_(MSM8916)). However, it might be more difficult to get theses device in good working order.
 
-### I just want to run manstream Linux. I don't care about kernel version.
+### I just want to run mainstream Linux. I don't care about kernel version.
 
 If this is you, then the 2nd option allows more phone to run mainstream linux. This works by using an android linux kernel and proprietary firmwares for the specific phone, and use wrappers to allow the device to be run outside android enviroment. This wrapper is called [Halium](https://en.wikipedia.org/wiki/Halium). One advantages of this approach is more phone functionality remain intact. However, since an older android kernel is used, it has more security vulnerability and you also may get stuck in older version of a Linux distro. You are also missing of the newer application taht is only updated/avaiable in newer kernel version. So it is a trade-off between having a functional linux device now or having a more future proof but less functional linux device in the beginning.
 
@@ -44,3 +44,7 @@ There are 2 notable linux distros that uses halium.
 * [Droidian](https://droidian.org/) (based on Debian)
 
 One thing to take note is the latest version Ubuntu LTS is 22.04. However, ubuntu touch device can only run up to 20.04 and some even only up to 16.04 (released in 2016). I recalled having some issue to get python code running for my Asus Max Pro M1 as the latest version python avaiable on 16.04 is 3.4 by default. Some thrid party PPA allow me to install up to 3.9. However, it still would not allow me to run python 3.11. In contrast, my mobian Oneplus 6T has python 3.11 intalled by default. This might be an issue specifcially with Ubuntu touch so I would like to try droidian to see if I ran to the same issue. However, it might be as the original android kernel uses linux version 4.9 while the mobian runs kernel version 6.6.
+
+## Linux on Router
+
+## Linux on TV Box
