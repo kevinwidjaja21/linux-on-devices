@@ -46,5 +46,26 @@ There are 2 notable linux distros that uses halium.
 One thing to take note is the latest version Ubuntu LTS is 22.04. However, ubuntu touch device can only run up to 20.04 and some even only up to 16.04 (released in 2016). I recalled having some issue to get python code running for my Asus Max Pro M1 as the latest version python avaiable on 16.04 is 3.4 by default. Some thrid party PPA allow me to install up to 3.9. However, it still would not allow me to run python 3.11. In contrast, my mobian Oneplus 6T has python 3.11 intalled by default. This might be an issue specifcially with Ubuntu touch so I would like to try droidian to see if I ran to the same issue. However, it might be as the original android kernel uses linux version 4.9 while the mobian runs kernel version 6.6.
 
 ## Linux on Router
+[DD-WRT](https://dd-wrt.com/)
+[OpenWRT](https://openwrt.org/)
 
 ## Linux on TV Box
+[Batocera Linux](https://batocera.org/)
+[Lakka](https://www.lakka.tv/)
+[LibreELEC](https://libreelec.tv/)
+[OSMC](https://kodi.wiki/view/OSMC)
+
+## Linux on game console
+### PlayStation
+[Linux for PlayStation 2](https://en.wikipedia.org/wiki/Linux_for_PlayStation_2)
+
+### Wii
+[Wiibreww article on linux distro](http://www.wiibrew.org/wiki/Wii-Linux/Distros)
+
+### Switch
+[Lakka](https://www.lakka.tv/)
+
+## Linux on old PC
+[Batocera Linux](https://batocera.org/)
+
+## Build a generic barebones linux for any device
