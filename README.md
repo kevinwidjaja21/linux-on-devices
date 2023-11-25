@@ -12,7 +12,7 @@ In addition, ARM CPU used in phone, unlike x86 CPU use in desktop, have much mor
 
 ### So, can I install Linux to my phone?
 
-Unfortunately, with the issue mentioned above, not all phone can run the mainstream linux distro easily. There are 3 ways of installing Linux to
+Unfortunately, with the issue mentioned above, not all phone can run the mainstream linux distro easily. There are 2 ways of installing Linux to an smartphone.
 
 ### I want to run the latest Linux kernel version.
 If you want to run Linux as close as the Desktop variant, there are a couple notable distros that has proper smartphone build.
@@ -37,7 +37,7 @@ As you can see, all 3 phones are running Qualcomm Snapdragon 845. This SoC has a
 
 ### I just want to run mainstream Linux. I don't care about kernel version.
 
-If this is you, then the 2nd option allows more phone to run mainstream linux. This works by using an android linux kernel and proprietary firmwares for the specific phone, and use wrappers to allow the device to be run outside android enviroment. This wrapper is called [Halium](https://en.wikipedia.org/wiki/Halium). One advantages of this approach is more phone functionality remain intact. However, since an older android kernel is used, it has more security vulnerability and you also may get stuck in older version of a Linux distro. You are also missing of the newer application taht is only updated/avaiable in newer kernel version. So it is a trade-off between having a functional linux device now or having a more future proof but less functional linux device in the beginning.
+If this is you, then the 2nd option allows more phone to run mainstream linux. This works by using an android linux kernel and proprietary firmwares for the specific phone, and use wrappers to allow the device to be run outside android enviroment. This wrapper is called [Halium](https://en.wikipedia.org/wiki/Halium). One advantages of this approach is more phone functionality remain intact. However, since an older android kernel is used, it has more security vulnerability and you also may get stuck in older version of a Linux distro. You are also missing of the newer application that is only updated/avaiable in newer kernel version. So it is a trade-off between having a functional linux device now or having a more future proof but less functional linux device in the beginning.
 
 There are 2 notable linux distros that uses halium.
 * [Ubuntu Touch](https://ubuntu-touch.io/)
@@ -46,8 +46,8 @@ There are 2 notable linux distros that uses halium.
 One thing to take note is the latest version Ubuntu LTS is 22.04. However, ubuntu touch device can only run up to 20.04 and some even only up to 16.04 (released in 2016). I recalled having some issue to get python code running for my Asus Max Pro M1 as the latest version python avaiable on 16.04 is 3.4 by default. Some thrid party PPA allow me to install up to 3.9. However, it still would not allow me to run python 3.11. In contrast, my mobian Oneplus 6T has python 3.11 intalled by default. This might be an issue specifcially with Ubuntu touch so I would like to try droidian to see if I ran to the same issue. However, it might be as the original android kernel uses linux version 4.9 while the mobian runs kernel version 6.6.
 
 ## Linux on Router
-[DD-WRT](https://dd-wrt.com/)
-[OpenWRT](https://openwrt.org/)
+[DD-WRT](https://dd-wrt.com/) seems to run linux in the same way as droidian and ubuntu touch.
+[OpenWRT](https://openwrt.org/) on the other hand, runs close to newer version of linux kernel (5.15 LTS as of 23.05 release)
 
 ## Linux on TV Box
 [Batocera Linux](https://batocera.org/)
