@@ -10,6 +10,8 @@ I am just going to start with a quote from this article from Mobian (Debian for 
 
 In addition, ARM CPU used in phone, unlike x86 CPU use in desktop, have much more variant between different manufacturer due to the fact that each manufacturer can design their own variation of ARM core. many of these company also don't give proper documentation to these variant. These difference also mean it requires addtional patches to get Linux running for different ARM SoCs. Not to mention the different propietary components or intefrace they may use for different phone.
 
+Another thing to take note, android itself doesn't recieve any linux kernel update beyond what it came innitially. For example, Oneplus 6T came with Linux 4.9 even as the android version is updated to version 11.
+
 ### So, can I install Linux to my phone?
 
 Unfortunately, with the issue mentioned above, not all phone can run the mainstream linux distro easily. There are 2 ways of installing Linux to an smartphone.
