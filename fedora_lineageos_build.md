@@ -9,4 +9,4 @@ chmod a+x ~/bin/repo;
 sudo ln -sf /usr/share/crypto-policies/LEGACY/java.txt /etc/crypto-policies/back-ends/java.config;
 ```
 
-This should also install dependedncy for LineageOs and Halium. This wrute-up may not be updated as frequently so plese refer to the build page in DivetOS documentation [here](https://divestos.org/pages/build)
+This should also install dependency for LineageOs and Halium. This write-up may not be updated as frequently so please refer to the build page in DivestOS documentation [here](https://divestos.org/pages/build)
