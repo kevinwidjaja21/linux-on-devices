@@ -1,4 +1,5 @@
-#Updated 2023 December 12
+# Updated 2023 December 12
+
 In general, Lineage OS, custom roms and halium recommends building on Debian an ddon't provide dependency installation process for Fedora. However, DivestOS does provide dependency installation process for Fedora.
 ```
 sudo dnf update;
