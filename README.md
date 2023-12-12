@@ -35,27 +35,38 @@ Obviously, this is a phone designed to run mainstream linux and what I wanted to
 * [OnePlus 6T (Fajita)](https://www.gsmarena.com/oneplus_6t-9350.php)
 * [Xiaomi Pocophone F1](https://www.gsmarena.com/xiaomi_pocophone_f1-9293.php)
 
-As you can see, all 3 phones are running Qualcomm Snapdragon 845. This SoC has a relatively good mainstream linux support through the [Qualcomm Snapdragon 845 Mainline project](https://gitlab.com/sdm845-mainline/linux). Mainlining in this case refers to getting an SoC to run linux kernel as close to its main source code maintained by Linus Torvalds with minimal software tweak (Not as extensive as Android Linux kernel). Other popular flagship SoC also has their own as can bee seen in [this Postmarket OS Wiki page](https://wiki.postmarketos.org/wiki/Mainlining). However, only few SoC has support as good as Snapdragon 845. One other notable SoC is Snapdragon 410 and some phones with SD410 has a [good community support for Postmarket OS](https://wiki.postmarketos.org/wiki/Qualcomm_Snapdragon_410/412_(MSM8916)). However, it might be more difficult to get theses device in good working order.
+As you can see, all 3 phones are running Qualcomm Snapdragon 845. This SoC has a relatively good mainstream linux support through the [Qualcomm Snapdragon 845 Mainline project](https://gitlab.com/sdm845-mainline/linux). Mainlining in this case refers to getting an SoC to run linux kernel as close to its main source code maintained by Linus Torvalds with minimal software tweak (Not as extensive as Android Linux kernel). Other popular flagship SoC also has their own as can bee seen in [this Postmarket OS Wiki page](https://wiki.postmarketos.org/wiki/Mainlining). However, only few SoC has support as good as Snapdragon 845. One other notable SoC is Snapdragon 410 and some phones with SD410 has a [good community support for Postmarket OS](https://wiki.postmarketos.org/wiki/Qualcomm_Snapdragon_410/412_(MSM8916)). However, it might be more difficult to obtain theses device in good working order.
+Following are all the distro with a pre-made images for any of the 3 phones.
+* [PostmarketOS](https://postmarketos.org/download/)
+* Mobian ([OP6 OP6T](https://wiki.debian.org/InstallingDebianOn/OnePlus/OnePlus6))([POCO F1](https://wiki.debian.org/InstallingDebianOn/Xiaomi/PocophoneF1))
+* [Kupfer](https://kupfer.gitlab.io/devices/index.html)
+* [Sineware ProLinux 2](https://sineware.ca/prolinux/)
+
+Obviously, you can compile your own distro if your phone has a good mainline kernel support. PostmarketOS has a [list of device](https://wiki.postmarketos.org/wiki/Devices) that can run it with varying levle of support any of this can technically run other distro. One advantage of PostmarketOs is it has very small image size which enables it to eb installed in devices with small storage space. It also has a dedicated application to compile it for different phones with varying different option and tools to port mainline linux to a new phone.
 
 ### I just want to run mainstream Linux. I don't care about kernel version.
 
-If this is you, then the 2nd option allows more phone to run mainstream linux. This works by using an android linux kernel and proprietary firmwares for the specific phone, and use wrappers to allow the device to be run outside android enviroment. This wrapper is called [Halium](https://en.wikipedia.org/wiki/Halium). One advantages of this approach is more phone functionality remain intact. However, since an older android kernel is used, it has more security vulnerability and you also may get stuck in older version of a Linux distro. You are also missing of the newer application that is only updated/avaiable in newer kernel version. So it is a trade-off between having a functional linux device now or having a more future proof but less functional linux device in the beginning.
+If this is you, then the 2nd option allows more phone to run mainstream linux. This works by using an android linux kernel and proprietary firmwares for the specific phone, and use wrappers to allow the device to be run outside android enviroment. This wrapper is called [Halium](https://en.wikipedia.org/wiki/Halium). One advantages of this approach is more phone functionality remain intact. However, since an older android kernel is used, it has more security vulnerability and you also may get stuck in older version of a Linux distro. You are also missing of the newer application that is only updated/avaiable in newer kernel version. So it is a trade-off between having a functional linux device now or having a more future proof but less functional linux device in the beginning. There are also more phone supported by halium as firware/driver from android can be reused instead.
 
 There are 2 notable linux distros that uses halium.
 * [Ubuntu Touch](https://ubuntu-touch.io/)
 * [Droidian](https://droidian.org/) (based on Debian)
 
+Other linux distros that use halium are:
+* [Sailfish OS](https://sailfishos.org/)
+* [LuneOS](https://webos-ports.org/wiki/Main_Page) (based on webOS).
+
 One thing to take note is the latest version Ubuntu LTS is 22.04. However, ubuntu touch device can only run up to 20.04 and some even only up to 16.04 (released in 2016). I recalled having some issue to get python code running for my Asus Max Pro M1 as the latest version python avaiable on 16.04 is 3.4 by default. Some thrid party PPA allow me to install up to 3.9. However, it still would not allow me to run python 3.11. In contrast, my mobian Oneplus 6T has python 3.11 intalled by default. This might be an issue specifcially with Ubuntu touch so I would like to try droidian to see if I ran to the same issue. However, it might be as the original android kernel uses linux version 4.9 while the mobian runs kernel version 6.6.
 
 ## Linux on Router
-[DD-WRT](https://dd-wrt.com/) seems to run linux in the same way as droidian and ubuntu touch.
-[OpenWRT](https://openwrt.org/) on the other hand, runs close to newer version of linux kernel (5.15 LTS as of 23.05 release)
+* [DD-WRT](https://dd-wrt.com/) seems to run linux in the same way as droidian and ubuntu touch. Kernel used are often very outdated.
+* [OpenWRT](https://openwrt.org/) on the other hand, runs close to newer version of linux kernel (5.15 LTS as of 23.05 release).
 
 ## Linux on TV Box
-[Batocera Linux](https://batocera.org/)
-[Lakka](https://www.lakka.tv/)
-[LibreELEC](https://libreelec.tv/)
-[OSMC](https://kodi.wiki/view/OSMC)
+* [Batocera Linux](https://batocera.org/)
+* [Lakka](https://www.lakka.tv/)
+* [LibreELEC](https://libreelec.tv/)
+* [OSMC](https://kodi.wiki/view/OSMC)
 
 ## Linux on game console
 ### PlayStation
