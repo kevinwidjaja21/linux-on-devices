@@ -3,11 +3,11 @@
 ![top](https://github.com/kevinwidjaja21/linux-on-devices/assets/19798208/f5b9c7d5-aef7-4be5-b43a-324bc691d0f0)
 ![bottom](https://github.com/kevinwidjaja21/linux-on-devices/assets/19798208/4b329421-840e-458d-a190-da39dbf3183d)
 
-SoC is possibly Allwinner H6. Heatsink is glued so cannot check it without physically destroying it. CPU info shows the chipset name as "sun50iw6". Was intended to be sold along with EVpAd android service which provide access to many "content" including some licensed shows. Questionable practice to put it mildly. i got it from a parent's friend who got rid of it when when the service stop working.
+SoC is possibly Allwinner H6. The heatsink is glued, so cannot check it without physically destroying it. CPU info shows the chipset name as "sun50iw6". It was intended to be sold along with EVPAD android service which provide access to many "content" including some licensed shows. Questionable practice, to put it mildly. I got it from a parent's friend, who got rid of it when the service stop working.
 
 Support page only consist of user manual. No firmware download. I will try to ask for a source code through email but most likely, they won't comply with GPL.
 
-Has a UART pins but not yet checked if it works and what voltage it uses. Better uses to probe the TX pin first.
+Has a UART pins, but not yet checked if it works and what voltage it uses. Better uses to probe the TX pin first.
 
 Links related to H6 chipset and armbian build for a generic H6 board.
 * https://linux-sunxi.org/H6
