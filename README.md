@@ -40,7 +40,7 @@ Following are all the distro with a pre-made images for any of the 3 phones.
 * [PostmarketOS](https://postmarketos.org/download/)
 * Mobian ([OP6 OP6T](https://wiki.debian.org/InstallingDebianOn/OnePlus/OnePlus6))([POCO F1](https://wiki.debian.org/InstallingDebianOn/Xiaomi/PocophoneF1))
 * [Kupfer](https://kupfer.gitlab.io/devices/index.html)
-* [Sineware ProLinux 2](https://sineware.ca/proLinux/)
+* [Sineware ProLinux 2](https://sineware.ca/prolinux/)
 
 Obviously, you can compile your own distro if your phone has a good mainline kernel support. PostmarketOS has a [list of devices](https://wiki.postmarketos.org/wiki/Devices) that can run it with varying level of support and any of these device can technically run other distro. One advantage of PostmarketOS is it has very small image size which enables it to be installed in devices with small storage space. It also has a [dedicated application] to compile it for different phones with varying different option and tools to port mainline Linux to a new phone.
 
@@ -80,5 +80,3 @@ One thing to take note is the latest version Ubuntu LTS is 22.04. However, ubunt
 
 ## Linux on old PC
 [Batocera Linux](https://batocera.org/)
-
-## Build a generic barebones Linux for any device
