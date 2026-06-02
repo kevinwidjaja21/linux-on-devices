@@ -18,4 +18,6 @@ Links related to H6 chipset and armbian build for a generic H6 board.
 ## Related board
 The device seems to be just a rebrand or share the same OEM as [Eachlink H6 Mini](https://linux-sunxi.org/Eachlink_H6_Mini). The only difference so far is with the RAM (2GB only instead of 3GB)
 
-The end for now.
+## Update (2026-06-02)
+There is a DTS submitted to u-boot. It is possible to use it for
+linux but ot is not yet tested by me.
